@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pancho Panza | Súper panchos gourmet en Asunción</title>
+<meta name="description" content="Súper panchos gourmet de 23 cm en pan artesanal, terminados al tatakua. Pizzas, chivitos y burgers. Carmelitas, Asunción. Pedí por WhatsApp.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#121212">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Pancho Panza | Súper panchos gourmet">
+<meta property="og:description" content="Pan artesanal, panchos Ochsi y todo al tatakua. Pedí por WhatsApp. Ma a Do desde las 19 h.">
+<meta property="og:image" content="https://web.jbenquet.com/pancho-panza/img/og.jpg">
+<meta property="og:url" content="https://web.jbenquet.com/pancho-panza/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Pancho Panza",
+"description":"Pancheria, chiviteria y pizzeria. Súper panchos gourmet en pan artesanal terminados al tatakua.",
+"servesCuisine":["Panchos","Pizza","Chivitos","Hamburguesas"],"priceRange":"Gs 20.000 a Gs 60.000",
+"telephone":"+595982666623","url":"https://web.jbenquet.com/pancho-panza/",
+"image":"https://web.jbenquet.com/pancho-panza/img/og.jpg",
+"address":{"@type":"PostalAddress","streetAddress":"Melvin Jones 350","addressLocality":"Asunción","addressRegion":"Carmelitas","addressCountry":"PY"},
+"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"19:00","closes":"23:59"}],
+"sameAs":["https://www.instagram.com/panchopanzapy/"],"hasMenu":"https://web.jbenquet.com/pancho-panza/#menu"}
+</script>
+<style>
+:root{
+  --bg:#121212; --bg2:#1c1c1c; --card:#202020; --line:#2e2e2e;
+  --red:#EF3E4A; --red2:#d72f3b; --yel:#FDB833; --txt:#f6f1e9; --mut:#b3aca3;
+  --wa:#25D366; --r:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--txt);font:16px/1.55 Nunito,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,.disp{font-family:"Lilita One",Nunito,sans-serif;font-weight:400;letter-spacing:.5px;line-height:1.05}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:14px 22px;font:800 16px Nunito,sans-serif;cursor:pointer;text-decoration:none;transition:transform .15s,background .15s}
+.btn:active{transform:scale(.97)}
+.btn-red{background:var(--red);color:#fff}.btn-red:hover{background:var(--red2)}
+.btn-yel{background:var(--yel);color:#1a1a1a}
+.btn-wa{background:var(--wa);color:#08341a}
+.btn-ghost{background:transparent;color:var(--txt);border:2px solid var(--line)}
+.wa-ico{width:20px;height:20px;flex:none}
+
+/* header */
+header{position:sticky;top:0;z-index:40;background:rgba(18,18,18,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;gap:14px;height:62px}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none}
+.brand img{width:38px;height:38px}
+.brand span{font-family:"Lilita One";font-size:22px;line-height:.9}
+.brand b{color:var(--red);font-weight:400}.brand i{color:var(--yel);font-style:normal}
+nav{display:none;gap:22px;margin-left:auto;font-weight:700}
+nav a{text-decoration:none;color:var(--mut)}nav a:hover{color:var(--txt)}
+.hd .btn{margin-left:auto;padding:10px 16px;font-size:14px}
+@media(min-width:860px){nav{display:flex}.hd .btn{margin-left:8px}}
+
+/* hero */
+.hero{position:relative;padding:28px 0 36px;overflow:hidden}
+.hero-grid{display:grid;gap:26px;align-items:center}
+.tag{display:inline-flex;align-items:center;gap:8px;background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700;color:var(--mut)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--mut)}
+.dot.on{background:var(--wa);box-shadow:0 0 0 4px rgba(37,211,102,.2)}
+.hero h1{font-size:clamp(44px,11vw,84px);margin:16px 0 14px}
+.hero h1 .r{color:var(--red)}.hero h1 .y{color:var(--yel)}
+.hero p.lead{font-size:18px;color:var(--mut);max-width:520px}
+.hero p.lead strong{color:var(--txt)}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 18px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px;color:var(--mut);font-weight:700}
+.facts span::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--yel);margin-right:8px;vertical-align:middle}
+.hero-img{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 60px -20px rgba(239,62,74,.35)}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.hero-img .sticker{position:absolute;left:14px;bottom:14px;background:var(--yel);color:#1a1a1a;border-radius:16px;padding:10px 14px;font:20px "Lilita One";transform:rotate(-3deg);line-height:1}
+.hero-img .sticker small{display:block;font:800 12px Nunito;letter-spacing:.3px}
+@media(min-width:860px){.hero{padding:56px 0 64px}.hero-grid{grid-template-columns:1.1fr .9fr;gap:48px}}
+
+/* marquee */
+.strip{background:var(--red);color:#fff;overflow:hidden;white-space:nowrap;padding:12px 0;font:22px "Lilita One"}
+.strip div{display:inline-block;animation:mq 28s linear infinite}
+.strip span{margin:0 18px}.strip span:nth-child(even){color:var(--yel)}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.strip div{animation:none}}
+
+/* sections */
+section{padding:56px 0}
+.kicker{color:var(--yel);font-weight:800;text-transform:uppercase;letter-spacing:1.5px;font-size:13px}
+.sec-h{font-size:clamp(34px,7vw,52px);margin:6px 0 10px}
+.sec-p{color:var(--mut);max-width:620px}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:28px}
+.why div{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px}
+.why h3{font-size:22px;color:var(--yel);margin-bottom:6px}
+.why p{color:var(--mut);font-size:15px}
+
+/* menu */
+#menu{background:var(--bg2)}
+.tabs{position:sticky;top:62px;z-index:20;background:var(--bg2);display:flex;gap:8px;overflow-x:auto;padding:14px 0;margin-top:18px;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{flex:none;border:1px solid var(--line);background:var(--card);color:var(--mut);border-radius:999px;padding:9px 16px;font:800 14px Nunito;cursor:pointer}
+.tabs button.on{background:var(--yel);border-color:var(--yel);color:#1a1a1a}
+.cat{padding-top:20px}
+.cat h3{font-size:30px;margin:10px 0 4px}
+.cat .note{color:var(--mut);font-size:14px;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
+.item{display:flex;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:10px;align-items:center}
+.item .ph{width:92px;height:92px;flex:none;border-radius:14px;overflow:hidden;background:#2a2a2a center/52% no-repeat url(img/logo.svg)}
+.item .ph img{width:100%;height:100%;object-fit:cover}
+.item .bd{flex:1;min-width:0}
+.item h4{font:19px "Lilita One";letter-spacing:.3px;display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.badge{font:800 10px Nunito;text-transform:uppercase;letter-spacing:.6px;background:var(--red);color:#fff;border-radius:6px;padding:2px 6px}
+.badge.y{background:var(--yel);color:#1a1a1a}
+.item p{color:var(--mut);font-size:13.5px;line-height:1.35;margin:2px 0 6px}
+.item .row{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.price{font-weight:800;color:var(--yel)}
+.add{border:0;background:var(--red);color:#fff;border-radius:999px;height:34px;min-width:34px;padding:0 12px;font:800 15px Nunito;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.qty{display:inline-flex;align-items:center;gap:2px;background:#2b2b2b;border-radius:999px;padding:2px}
+.qty button{width:30px;height:30px;border-radius:50%;border:0;background:transparent;color:var(--txt);font:800 18px Nunito;cursor:pointer}
+.qty span{min-width:18px;text-align:center;font-weight:800}
+.disclaimer{color:var(--mut);font-size:13px;margin-top:22px}
+
+/* about */
+.about{display:grid;gap:26px;align-items:center}
+.mosaic{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mosaic img{border-radius:var(--r);aspect-ratio:1;object-fit:cover;width:100%}
+.mosaic img:first-child{grid-row:span 2;aspect-ratio:auto;height:100%}
+.ticks{list-style:none;margin-top:18px;display:grid;gap:10px}
+.ticks li{display:flex;gap:10px;align-items:flex-start}
+.ticks li::before{content:"✓";flex:none;width:24px;height:24px;border-radius:50%;background:var(--red);color:#fff;font-weight:800;display:grid;place-items:center;font-size:13px}
+@media(min-width:860px){.about{grid-template-columns:1fr 1fr;gap:48px}}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:24px}
+.gal img{border-radius:14px;aspect-ratio:1;object-fit:cover;width:100%}
+@media(min-width:700px){.gal{grid-template-columns:repeat(4,1fr)}}
+
+/* cards row */
+.cards{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.big{border-radius:24px;padding:26px;position:relative;overflow:hidden}
+.big h3{font-size:32px;margin-bottom:8px}
+.big p{margin-bottom:18px}
+.big.y{background:var(--yel);color:#1a1a1a}
+.big.r{background:var(--red);color:#fff}
+.big.d{background:var(--card);border:1px solid var(--line)}
+.big ul{list-style:none;display:grid;gap:6px;margin-bottom:18px;font-weight:700}
+
+/* location */
+.loc{display:grid;gap:18px}
+.map{border-radius:24px;overflow:hidden;border:1px solid var(--line);min-height:320px;background:var(--card);display:flex}
+.map iframe{flex:1;width:100%;min-height:320px;border:0;filter:grayscale(.2) contrast(1.05)}
+.hours{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px}
+.hours table{width:100%;border-collapse:collapse;margin:12px 0 18px}
+.hours td{padding:8px 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;font-weight:800}
+.hours tr.today td{color:var(--yel)}
+@media(min-width:860px){.loc{grid-template-columns:1.4fr 1fr}}
+
+footer{border-top:1px solid var(--line);padding:30px 0 120px;color:var(--mut);font-size:14px}
+.ft{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+
+/* floating cart bar */
+.bar{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;display:flex;gap:10px;max-width:560px;margin:0 auto;transition:transform .25s}
+.bar .btn{flex:1;box-shadow:0 12px 30px rgba(0,0,0,.5)}
+.bar .wa-only{flex:0 0 auto;width:54px;padding:0}
+.bar .cartbtn{justify-content:space-between}
+.bar .count{background:rgba(255,255,255,.22);border-radius:999px;padding:2px 10px}
+
+/* drawer */
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:60;opacity:0;pointer-events:none;transition:opacity .2s}
+.ov.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;z-index:70;left:0;right:0;bottom:0;max-height:92vh;background:var(--bg2);border-radius:24px 24px 0 0;transform:translateY(100%);transition:transform .28s ease;display:flex;flex-direction:column;max-width:560px;margin:0 auto}
+.drawer.on{transform:none}
+.dh{display:flex;justify-content:space-between;align-items:center;padding:18px 18px 8px}
+.dh h3{font-size:28px}
+.x{border:0;background:var(--card);color:var(--txt);width:38px;height:38px;border-radius:50%;font-size:20px;cursor:pointer}
+.db{overflow:auto;padding:0 18px 18px}
+.line{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.line .n{flex:1;font-weight:700}
+.line .n small{display:block;color:var(--mut);font-weight:600}
+.free{margin:14px 0;padding:12px 14px;border-radius:14px;background:var(--card);font-size:14px;font-weight:700}
+.free .pb{height:6px;background:#333;border-radius:9px;margin-top:8px;overflow:hidden}
+.free .pb i{display:block;height:100%;background:var(--yel);border-radius:9px;transition:width .3s}
+.free.ok{background:rgba(37,211,102,.12);color:#8ef0b2}
+.free.ok .pb i{background:var(--wa)}
+.tot{display:flex;justify-content:space-between;font:24px "Lilita One";margin:10px 0 16px}
+.f label{display:block;font-weight:800;font-size:14px;margin:12px 0 6px}
+.f input,.f textarea{width:100%;background:var(--card);border:1px solid var(--line);border-radius:12px;color:var(--txt);padding:12px;font:16px Nunito}
+.f textarea{min-height:70px;resize:vertical}
+.seg{display:flex;gap:6px;flex-wrap:wrap}
+.seg input{display:none}
+.seg label{margin:0;flex:1;text-align:center;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:11px 8px;cursor:pointer;font-weight:800;font-size:14px;min-width:90px}
+.seg input:checked+label{background:var(--yel);border-color:var(--yel);color:#1a1a1a}
+.empty{color:var(--mut);padding:30px 0;text-align:center}
+.df{padding:12px 18px calc(16px + env(safe-area-inset-bottom));border-top:1px solid var(--line)}
+.df .btn{width:100%}
+.hide{display:none!important}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hd">
+    <a class="brand" href="#top" aria-label="Pancho Panza, inicio"><img src="img/logo.svg" alt=""><span><b>PANCHO</b><br><i>PANZA</i></span></a>
+    <nav><a href="#menu">Menú</a><a href="#nosotros">Nosotros</a><a href="#delivery">Delivery</a><a href="#ubicacion">Ubicación</a></nav>
+    <a class="btn btn-red" href="#menu">Pedir ahora</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag"><i class="dot" id="openDot"></i><span id="openTxt">Martes a domingo desde las 19 h</span></span>
+      <h1>Vivo la vida como <span class="r">pancho</span> por mi <span class="y">panza</span></h1>
+      <p class="lead">Los primeros <strong>súper panchos gourmet</strong> de Paraguay: 23 cm de pancho Ochsi en <strong>pan artesanal amasado a mano</strong>, toppings de verdad y todo terminado <strong>al tatakua</strong>.</p>
+      <div class="cta">
+        <a class="btn btn-red" href="#menu">Ver menú y pedir</a>
+        <a class="btn btn-wa" data-wa="Hola Pancho Panza! Quiero hacer un pedido" href="#"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.4 13.4 0 0 0 5.2 4.6c1.9.8 2.6.9 3.6.7.6-.1 1.8-.7 2-1.4s.3-1.3.2-1.4-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6zm8.4-18.2A11.8 11.8 0 0 0 1.8 17.8L.1 24l6.4-1.7a11.8 11.8 0 0 0 5.6 1.4A11.8 11.8 0 0 0 20.4 3.6z"/></svg>WhatsApp</a>
+      </div>
+      <div class="facts"><span>Delivery gratis desde Gs 100.000</span><span>Carmelitas, Asunción</span><span>Pizzas y chivitos también</span></div>
+    </div>
+    <div class="hero-img">
+      <img src="img/hero.webp" alt="Súper pancho gourmet de Pancho Panza con cheddar y panceta" fetchpriority="high">
+      <div class="sticker">23 cm<small>de puro pancho</small></div>
+    </div>
+  </div>
+</section>
+
+<div class="strip" aria-hidden="true"><div>
+  <span>PAN ARTESANAL</span><span>PANCHOS OCHSI</span><span>TODO AL TATAKUA</span><span>DELIVERY PROPIO</span><span>CHIVITO URUGUAYO</span><span>PIZZA AL TATAKUA</span>
+  <span>PAN ARTESANAL</span><span>PANCHOS OCHSI</span><span>TODO AL TATAKUA</span><span>DELIVERY PROPIO</span><span>CHIVITO URUGUAYO</span><span>PIZZA AL TATAKUA</span>
+</div></div>
+
+<section>
+  <div class="wrap">
+    <span class="kicker">Por qué nos eligen</span>
+    <h2 class="sec-h">No es un pancho cualquiera</h2>
+    <div class="why">
+      <div><h3>Pan de verdad</h3><p>Amasado a mano todos los días con agua mineral, levadura de cerveza y la mejor harina. Es nuestro diferencial.</p></div>
+      <div><h3>Pancho Ochsi</h3><p>Súper pancho de 23 cm de primera marca, con toppings de calidad y sin mezquinar.</p></div>
+      <div><h3>Al tatakua</h3><p>Todo lo que cocinamos pasa por el horno de barro: los panchos, las pizzas y el pan.</p></div>
+      <div><h3>Delivery propio</h3><p>En auto, no en moto. Llega mejor y te sale más barato que por las apps.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <span class="kicker">Menú</span>
+    <h2 class="sec-h">Elegí, sumá y pedí por WhatsApp</h2>
+    <p class="sec-p">Tocá <b>+</b> en lo que quieras. Armamos el mensaje con tu pedido y lo mandás directo al local.</p>
+    <div class="tabs" id="tabs"></div>
+    <div id="cats"></div>
+    <p class="disclaimer">Precios en guaraníes, sujetos a cambio. Te confirmamos el total por WhatsApp.</p>
+  </div>
+</section>
+
+<section id="nosotros">
+  <div class="wrap about">
+    <div class="mosaic">
+      <img src="img/tatakua.webp" alt="Horno tatakua encendido" loading="lazy">
+      <img src="img/pan.webp" alt="Panes artesanales recién horneados" loading="lazy">
+      <img src="img/don-corleone.webp" alt="Pancho Don Corleone con salsa bolognesa" loading="lazy">
+    </div>
+    <div>
+      <span class="kicker">Nuestra historia</span>
+      <h2 class="sec-h">Fuimos los primeros. Seguimos siendo los mejores.</h2>
+      <p class="sec-p">Pancho Panza nació con el Don Corleone: pancho, muzzarella, salsa bolognesa y parmesano en pan de campo. De ahí en adelante, cada súper pancho es una obra de arte con nombre propio, del Bo Pibe bien uruguayo al Paraguayoite, el más pedido de la casa.</p>
+      <ul class="ticks">
+        <li>El concepto gourmet aplicado al pancho, por primera vez en Paraguay</li>
+        <li>Pan 100% artesanal, hecho por nosotros</li>
+        <li>Mezcla de dos culturas: chivito uruguayo con mandioca frita</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="gal">
+      <img src="img/paraguayoite.webp" alt="Pancho Paraguayoite con huevo, choclo y mandioca" loading="lazy">
+      <img src="img/chivito.webp" alt="Chivito gourmet" loading="lazy">
+      <img src="img/pizza-mediterranea.webp" alt="Pizza al tatakua" loading="lazy">
+      <img src="img/sevoi-chyryry.webp" alt="Pancho Sevoi Chyryry con aros de cebolla" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="delivery">
+  <div class="wrap cards">
+    <div class="big y">
+      <h3>Delivery gratis</h3>
+      <ul><li>Pedidos desde Gs 100.000</li><li>Hasta 5 km del local, sin costo</li><li>Más lejos pagás solo la diferencia</li></ul>
+      <p>Pedinos directo: en las apps los precios son más altos y te cobran el envío.</p>
+      <a class="btn btn-red" href="#menu">Armar pedido</a>
+    </div>
+    <div class="big r">
+      <h3>Festejá tu cumple acá</h3>
+      <p>Infantil, adolescente o adulto. Tenemos combos para cada celebración.</p>
+      <a class="btn btn-yel" data-wa="Hola! Quiero festejar un cumpleaños en Pancho Panza. Me pasan los combos?" href="#">Pedir combos de cumple</a>
+    </div>
+  </div>
+</section>
+
+<section id="ubicacion" style="padding-top:0">
+  <div class="wrap">
+    <span class="kicker">Ubicación</span>
+    <h2 class="sec-h">Melvin Jones 350, Carmelitas</h2>
+    <p class="sec-p" style="margin-bottom:22px">A metros de la Avenida España, frente al estacionamiento de Nissei.</p>
+    <div class="loc">
+      <div class="map"><iframe title="Mapa de Pancho Panza" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Melvin+Jones+350,+Asunci%C3%B3n,+Paraguay&z=16&output=embed"></iframe></div>
+      <div class="hours">
+        <h3 style="font-size:28px">Horario</h3>
+        <table id="hours"></table>
+        <div style="display:grid;gap:10px">
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Melvin+Jones+350+Asunci%C3%B3n" target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn btn-wa" data-wa="Hola Pancho Panza!" href="#">Escribinos al 0982 666 623</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap ft">
+    <a class="brand" href="#top"><img src="img/logo.svg" alt=""><span><b>PANCHO</b><br><i>PANZA</i></span></a>
+    <div>Pancheria · Chiviteria · Pizzeria<br><a href="https://www.instagram.com/panchopanzapy/" target="_blank" rel="noopener">@panchopanzapy</a></div>
+  </div>
+</footer>
+
+<div class="bar" id="bar">
+  <a class="btn btn-wa wa-only" data-wa="Hola Pancho Panza!" href="#" aria-label="WhatsApp"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" style="width:26px;height:26px"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8 8 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.4 13.4 0 0 0 5.2 4.6c1.9.8 2.6.9 3.6.7.6-.1 1.8-.7 2-1.4s.3-1.3.2-1.4-.3-.2-.6-.3zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.8 9.8 0 1 1 8.3 4.6zm8.4-18.2A11.8 11.8 0 0 0 1.8 17.8L.1 24l6.4-1.7a11.8 11.8 0 0 0 5.6 1.4A11.8 11.8 0 0 0 20.4 3.6z"/></svg></a>
+  <button class="btn btn-red cartbtn hide" id="cartBtn"><span>Ver pedido <span class="count" id="cnt">0</span></span><span id="sum">Gs 0</span></button>
+  <a class="btn btn-red" id="menuBtn" href="#menu">Ver menú y pedir</a>
+</div>
+
+<div class="ov" id="ov"></div>
+<aside class="drawer" id="drawer" aria-label="Tu pedido">
+  <div class="dh"><h3>Tu pedido</h3><button class="x" id="close" aria-label="Cerrar">×</button></div>
+  <div class="db">
+    <div id="lines"></div>
+    <div class="free" id="free"></div>
+    <div class="tot"><span>Total</span><span id="tot">Gs 0</span></div>
+    <form class="f" id="form" onsubmit="return false">
+      <label>¿Cómo lo querés?</label>
+      <div class="seg">
+        <input type="radio" name="mode" id="m1" value="Delivery" checked><label for="m1">Delivery</label>
+        <input type="radio" name="mode" id="m2" value="Retiro en el local"><label for="m2">Retiro</label>
+        <input type="radio" name="mode" id="m3" value="Como en el local"><label for="m3">Como allá</label>
+      </div>
+      <label for="name">Tu nombre</label>
+      <input id="name" autocomplete="given-name" placeholder="Ej: Fernanda">
+      <div id="addrWrap"><label for="addr">Dirección o ubicación</label>
+      <input id="addr" autocomplete="street-address" placeholder="Calle, número y referencia"></div>
+      <label>Forma de pago</label>
+      <div class="seg">
+        <input type="radio" name="pay" id="p1" value="Efectivo" checked><label for="p1">Efectivo</label>
+        <input type="radio" name="pay" id="p2" value="Transferencia"><label for="p2">Transferencia</label>
+        <input type="radio" name="pay" id="p3" value="Tarjeta / QR"><label for="p3">Tarjeta / QR</label>
+      </div>
+      <label for="notes">Aclaraciones</label>
+      <textarea id="notes" placeholder="Sin cebolla, con mucha salsa, timbre roto..."></textarea>
+    </form>
+  </div>
+  <div class="df"><button class="btn btn-wa" id="send">Enviar pedido por WhatsApp</button></div>
+</aside>
+
+<script>
+const WA = "595982666623";
+const M = [
+ {id:"panchos", t:"Súper panchos", note:"23 cm de pancho Ochsi en pan artesanal, terminados al tatakua.", items:[
+  ["El Normal ya","Mayonesa, ketchup y mostaza. El clásico, en serio.",20000,"el-normal"],
+  ["Don Corleone","Muzza, salsa bolognesa y parmesano. El que dio origen a todo.",30000,"don-corleone","El original"],
+  ["El Rubito","Cheddar, panceta y perejil.",30000,"rubito"],
+  ["Bo Pibe","Muzza y salsa criolla, bien uruguayo.",30000,"bo-pibe"],
+  ["Pancheto","Muzza, panceta en tiras y cebolla de verdeo.",30000,"pancheto"],
+  ["Pepe Argento","Muzza, peperoni y orégano.",30000,"pepe-argento"],
+  ["Nelson Mandela","4 quesos y aceituna negra.",30000,"nelson-mandela"],
+  ["Rokefeller","Muzza, roquefort y cebolla morada.",30000,"rokefeller"],
+  ["Franccesco Tomasso","Muzza, tomate cherry y pesto.",30000,"francesco-tomasso"],
+  ["Pipino Cuevas","Muzza, pepinillo y cebolla caramelizada.",30000,"pipino-cuevas"],
+  ["Gaucho Power","Muzza, queso azul, papas pay y cebollita de verdeo.",30000,"gaucho-power"],
+  ["Vyrochuco","Salsa pizza, muzza y aceituna verde.",30000,"vyrochuco"],
+  ["Ñembotavy","Cebolla y salsa roja picante. Más picante de lo que parece.",35000,"nembotavy","Picante"],
+  ["Sevoi Chyryry","Muzza, provolone, aros de cebolla fritos y cebollita de verdeo.",35000,"sevoi-chyryry"],
+  ["El Paraguayoite","Muzza, catupiry, choclo, 2 huevos, panceta y mandioca frita.",40000,"paraguayoite","El más pedido"],
+  ["Browser Kuppa","Cheddar, panceta, perejil y papas fritas arriba del pancho.",40000,"browser-kuppa"],
+  ["2612","Salsa pizza, muzza, catupiry, peperoni, aceituna negra y papas fritas.",40000,"pancho-2612"]
+ ]},
+ {id:"pizzas", t:"Pizzas al tatakua", note:"Pizza'i: individual de 28 cm.", items:[
+  ["Pizza'i muzza","Individual de 28 cm.",20000,"pizzai-anchoas"],
+  ["Pizza'i con gustos","Individual de 28 cm con el gusto que elijas.",25000],
+  ["Muzza","",45000,"pizza-muzza"],
+  ["Fainá","",45000],
+  ["Pepe","Muzza y peperoni.",50000],
+  ["Margarita","Muzza, pesto y tomate cherry.",50000],
+  ["Napolitana","",50000],
+  ["Pesto","Muzza y salsa pesto.",50000],
+  ["Pollo catupiry","",55000],
+  ["Rúcula y bondiola","",55000],
+  ["Rúcula y parmesano","",55000],
+  ["4 quesos","",55000],
+  ["Queso azul y cebolla morada","",55000],
+  ["Anchoas con cherry","",60000],
+  ["Extra larga: papas y 4 huevos","Para compartir.",120000,"pizza-rumana"],
+  ["Extra larga: cheddar y panceta","Para compartir.",120000],
+  ["Extra larga: atún, jamón, aceitunas y cherry","Para compartir.",120000,"pizza-mediterranea"]
+ ]},
+ {id:"burgers", t:"Burgers y chivitos", note:"Chivito uruguayo con mandioca frita: dos culturas en un plato.", items:[
+  ["Burger cheddar y panceta","",35000,"burger"],
+  ["Chivito'i","Más chico, mismo sabor. Ideal para chicos.",35000],
+  ["Burger completa","",40000,"burger-2"],
+  ["Chivito","El chivito uruguayo de verdad.",45000,"chivito"]
+ ]},
+ {id:"extras", t:"Para acompañar", note:"", items:[
+  ["Papas fritas 400 g","Porción.",30000,"papas-fritas"],
+  ["Papas cheddar y panceta 400 g","",40000],
+  ["Aros de cebolla empanados","Porción.",15000],
+  ["Mandioca frita","Acompañamiento.",12000],
+  ["Papas fritas","Acompañamiento.",12000]
+ ]},
+ {id:"bebidas", t:"Bebidas", note:"", items:[
+  ["Agua 500 ml","",10000],["Jugo de naranja","Cartón.",10000],["Gaseosa 500 ml","",12000],
+  ["Chopp 350 ml","",10000],["Pilsen 750 ml","",20000],["Fernet 700 ml","",25000],["Gin tonic 600 ml","",25000]
+ ]}
+];
+
+const gs = n => "Gs " + n.toLocaleString("es-PY");
+const items = {}; M.forEach(c => c.items.forEach((it,i) => { items[c.id+i] = {n:it[0], p:it[2]}; }));
+let cart = {};
+try { cart = JSON.parse(localStorage.getItem("pp_cart")||"{}"); for (const k in cart) if(!items[k]) delete cart[k]; } catch(e){ cart = {}; }
+const save = () => { try { localStorage.setItem("pp_cart", JSON.stringify(cart)); } catch(e){} };
+
+// render menu
+const tabs = document.getElementById("tabs"), cats = document.getElementById("cats");
+M.forEach((c,ci) => {
+  const b = document.createElement("button"); b.textContent = c.t; b.dataset.c = c.id; if(!ci) b.className="on";
+  b.onclick = () => document.getElementById("c-"+c.id).scrollIntoView({behavior:"smooth"});
+  tabs.appendChild(b);
+  const s = document.createElement("div"); s.className="cat"; s.id="c-"+c.id;
+  s.innerHTML = `<h3>${c.t}</h3>${c.note?`<p class="note">${c.note}</p>`:""}<div class="grid">${c.items.map((it,i)=>`
+    <div class="item">
+      <div class="ph">${it[3]?`<img src="img/${it[3]}.webp" alt="${it[0]}" loading="lazy">`:""}</div>
+      <div class="bd">
+        <h4>${it[0]}${it[4]?`<span class="badge${it[4]==="El original"?" y":""}">${it[4]}</span>`:""}</h4>
+        ${it[1]?`<p>${it[1]}</p>`:""}
+        <div class="row"><span class="price">${gs(it[2])}</span><span data-k="${c.id+i}"></span></div>
+      </div>
+    </div>`).join("")}</div>`;
+  cats.appendChild(s);
+});
+
+function ctrl(k){
+  const q = cart[k]||0;
+  return q ? `<span class="qty"><button data-d="-1" data-k="${k}" aria-label="Quitar">−</button><span>${q}</span><button data-d="1" data-k="${k}" aria-label="Agregar">+</button></span>`
+           : `<button class="add" data-d="1" data-k="${k}" aria-label="Agregar ${items[k].n}">+ Agregar</button>`;
+}
+function render(){
+  document.querySelectorAll("span[data-k]").forEach(el => el.innerHTML = ctrl(el.dataset.k));
+  const keys = Object.keys(cart).filter(k => cart[k] > 0);
+  const n = keys.reduce((a,k)=>a+cart[k],0), t = keys.reduce((a,k)=>a+cart[k]*items[k].p,0);
+  document.getElementById("cnt").textContent = n;
+  document.getElementById("sum").textContent = gs(t);
+  document.getElementById("tot").textContent = gs(t);
+  document.getElementById("cartBtn").classList.toggle("hide", !n);
+  document.getElementById("menuBtn").classList.toggle("hide", !!n);
+  document.getElementById("lines").innerHTML = n ? keys.map(k=>`<div class="line"><div class="n">${items[k].n}<small>${gs(items[k].p)} c/u</small></div>${ctrl(k)}</div>`).join("") : `<p class="empty">Todavía no agregaste nada.</p>`;
+  const f = document.getElementById("free"), falta = 100000 - t;
+  f.className = "free" + (falta<=0 ? " ok" : "");
+  f.innerHTML = (falta<=0 ? "Tu delivery es gratis (hasta 5 km)" : `Te faltan ${gs(falta)} para el delivery gratis`) + `<div class="pb"><i style="width:${Math.min(100,t/1000)}%"></i></div>`;
+  f.classList.toggle("hide", modeVal()!=="Delivery");
+  save();
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest("[data-d]"); if(!b) return;
+  const k = b.dataset.k; cart[k] = Math.max(0,(cart[k]||0) + +b.dataset.d); if(!cart[k]) delete cart[k]; render();
+});
+
+// tabs highlight
+const io = new IntersectionObserver(es => es.forEach(en => { if(en.isIntersecting){ tabs.querySelectorAll("button").forEach(b=>b.classList.toggle("on", "c-"+b.dataset.c===en.target.id)); const on=tabs.querySelector(".on"); on && tabs.scrollTo({left:on.offsetLeft-16,behavior:"smooth"}); } }), {rootMargin:"-45% 0px -50% 0px"});
+document.querySelectorAll(".cat").forEach(c=>io.observe(c));
+
+// drawer
+const dr = document.getElementById("drawer"), ov = document.getElementById("ov");
+const open = v => { dr.classList.toggle("on",v); ov.classList.toggle("on",v); document.body.style.overflow = v?"hidden":""; };
+document.getElementById("cartBtn").onclick = () => open(true);
+document.getElementById("close").onclick = ov.onclick = () => open(false);
+const modeVal = () => (document.querySelector("input[name=mode]:checked")||{}).value;
+document.querySelectorAll("input[name=mode]").forEach(r => r.onchange = () => { document.getElementById("addrWrap").classList.toggle("hide", modeVal()!=="Delivery"); render(); });
+
+const waLink = txt => `https://wa.me/${WA}?text=${encodeURIComponent(txt)}`;
+document.querySelectorAll("[data-wa]").forEach(a => { a.href = waLink(a.dataset.wa); a.target="_blank"; a.rel="noopener"; });
+
+document.getElementById("send").onclick = () => {
+  const keys = Object.keys(cart); if(!keys.length){ open(false); location.hash="menu"; return; }
+  const v = id => document.getElementById(id).value.trim();
+  const mode = modeVal(), pay = document.querySelector("input[name=pay]:checked").value;
+  const t = keys.reduce((a,k)=>a+cart[k]*items[k].p,0);
+  let msg = `Hola Pancho Panza! Quiero hacer este pedido:\n\n` + keys.map(k=>`${cart[k]}x ${items[k].n}  ${gs(cart[k]*items[k].p)}`).join("\n") + `\n\nTotal: ${gs(t)}\nEntrega: ${mode}`;
+  if (mode==="Delivery" && v("addr")) msg += `\nDirección: ${v("addr")}`;
+  msg += `\nPago: ${pay}`;
+  if (v("name")) msg += `\nNombre: ${v("name")}`;
+  if (v("notes")) msg += `\nAclaraciones: ${v("notes")}`;
+  window.open(waLink(msg), "_blank");
+};
+
+// hours + open now (America/Asuncion)
+const days = ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
+const now = new Date(new Date().toLocaleString("en-US",{timeZone:"America/Asuncion"}));
+const d = now.getDay(), h = now.getHours();
+document.getElementById("hours").innerHTML = [2,3,4,5,6,0,1].map(i=>`<tr class="${i===d?"today":""}"><td>${days[i]}</td><td>${i===1?"Cerrado":"Desde las 19:00"}</td></tr>`).join("");
+const isOpen = d!==1 && h>=19;
+document.getElementById("openDot").classList.toggle("on", isOpen);
+document.getElementById("openTxt").textContent = isOpen ? "Abierto ahora · pedí ya" : (d===1 ? "Hoy lunes cerrado · abrimos mañana 19 h" : "Abrimos hoy a las 19 h");
+
+render();
+</script>
+</body>
+</html>
